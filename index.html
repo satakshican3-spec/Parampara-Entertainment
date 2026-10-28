@@ -17,7 +17,15 @@
 
 <body>
   <header class="site-header">
-    <a class="brand" href="#home">Parampara Entertainment</a>
+    <a class="brand" href="#home">
+  <img
+    src="logo.jpeg"
+    alt=""
+    width="84"
+    height="60"
+  >
+  <span>Parampara Entertainment</span>
+</a>
 
     <nav aria-label="Main navigation">
       <a href="#about">About</a>
@@ -47,6 +55,27 @@
     </section>
 
     <section id="about" class="section">
+  <p class="eyebrow">About Parampara</p>
+
+  <h2>Music and production for your event.</h2>
+
+  <p>
+    Parampara Entertainment is a Calgary-based business
+    providing live band performances, DJ services and
+    event equipment.
+  </p>
+
+  <p>
+    From live music to speakers, lighting, stages and
+    LED screens, we help bring together the sound,
+    performance and atmosphere of your event.
+  </p>
+
+  <p>
+    Explore our services and performances, then enquire
+    about the right setup for your occasion.
+  </p>
+</section>
       <p class="eyebrow">Behind the music</p>
       <h2>Meet Jay Chowdhury</h2>
 
@@ -92,66 +121,226 @@
     </section>
 
     <section id="performances" class="section">
-      <p class="eyebrow">On stage</p>
-      <h2>Watch the performances</h2>
+  <p class="eyebrow">Parampara on stage</p>
+  <h2>Experience the performance.</h2>
 
-      <div class="card-grid">
-        <article class="card">
-          <h3>Parampara live band</h3>
-          <p>A performance shared on Jay's public Facebook page.</p>
-
-          <a
-            href="https://www.facebook.com/61555985463207/videos/1647128596936494/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Watch on Facebook ↗
-          </a>
-        </article>
-
-        <article class="card">
-          <h3>Behind the keys</h3>
-          <p>Watch a keyboard performance by Jay Chowdhury.</p>
-
-          <a
-            href="https://www.facebook.com/61555985463207/videos/1634232678371469/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Watch on Facebook ↗
-          </a>
-        </article>
-      </div>
-
-      <!-- Add actual performance photographs and videos here. -->
-    </section>
-
-    <section id="events" class="section">
-      <p class="eyebrow">Past & upcoming</p>
-      <h2>Events and highlights</h2>
+  <div class="card-grid">
+    <article class="card">
+      <h3>Parampara live band</h3>
 
       <p>
-        Follow Jay's Facebook page for performance updates
-        and announcements.
+        Watch a live band performance by
+        Parampara Entertainment.
       </p>
 
-      <!-- Add confirmed past and upcoming events here. -->
-    </section>
+      <a
+        href="https://www.facebook.com/61555985463207/videos/1647128596936494/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Watch the performance ↗
+      </a>
+    </article>
+
+    <article class="card">
+      <h3>More from Parampara</h3>
+
+      <p>
+        Visit our Facebook page for performance
+        highlights, news and event updates.
+      </p>
+
+      <a
+        href="https://www.facebook.com/profile.php?id=61586558795149"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Explore Parampara on Facebook ↗
+      </a>
+    </article>
+  </div>
+</section>
+
+    <section id="events" class="section">
+  <p class="eyebrow">Past & upcoming</p>
+  <h2>Events and highlights</h2>
+
+  <p>
+    Follow Parampara Entertainment for
+    performance announcements and event updates.
+  </p>
+
+  <a
+    class="button button-secondary"
+    href="https://www.facebook.com/profile.php?id=61586558795149"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View event updates ↗
+  </a>
+
+  <!-- Confirmed event dates and photographs will go here. -->
+</section>
 
     <section id="booking" class="section booking-section">
       <p class="eyebrow">Let's plan your event</p>
       <h2>What would you like to book?</h2>
 
       <div class="card-grid">
-        <article id="booking-band" class="card">
-          <span class="card-number">01</span>
-          <h3>Band</h3>
-          <p>
-            Enquire about a live band, your preferred music
-            and the length of the performance.
-          </p>
-          <!-- Band enquiry form will go here. -->
-        </article>
+       <article id="booking-band" class="card">
+  <span class="card-number">01</span>
+  <h3>Band</h3>
+
+  <p>
+    Tell us about your event and the live performance
+    you have in mind.
+  </p>
+
+  <details class="booking-details">
+    <summary>Open band enquiry form</summary>
+
+    <form
+      class="booking-form"
+      action="https://formsubmit.co/paramparaentertainment123@gmail.com"
+      method="POST"
+    >
+      <input
+        type="hidden"
+        name="_subject"
+        value="Parampara Entertainment - Band enquiry"
+      >
+
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="service" value="Live band">
+
+      <label>
+        Your name *
+        <input
+          type="text"
+          name="name"
+          autocomplete="name"
+          maxlength="100"
+          required
+        >
+      </label>
+
+      <label>
+        Your email (optional)
+        <input
+          type="email"
+          name="email"
+          autocomplete="email"
+        >
+      </label>
+
+      <label>
+        Phone number *
+        <input
+          type="tel"
+          name="phone"
+          autocomplete="tel"
+          required
+        >
+      </label>
+
+      <label>
+    Preferred contact method *
+    <select name="preferred_contact" required>
+        <option value="">Choose one</option>
+        <option>Phone call</option>
+        <option>Text message</option>
+        <option>WhatsApp</option>
+        <option>Email</option>
+    </select>
+</label>
+
+      <label>
+    Best time to contact you
+    <input
+        type="text"
+        name="contact_time"
+        placeholder="For example: after 6 PM"
+        maxlength="100"
+    >
+</label>
+
+      <label>
+        Event type *
+        <select name="event_type" required>
+          <option value="">Choose an event type</option>
+          <option>Wedding or reception</option>
+          <option>Private celebration</option>
+          <option>Corporate event</option>
+          <option>Concert or festival</option>
+          <option>Community or cultural event</option>
+          <option>Other</option>
+        </select>
+      </label>
+
+      <label>
+    Event date (optional)
+    <input type="date" name="event_date">
+</label>
+
+<label>
+    Event start time (optional — can be discussed later)
+    <input type="time" name="event_start_time">
+</label>
+
+      <label>
+    City *
+    <input
+        type="text"
+        name="city"
+        placeholder="Event city"
+        autocomplete="address-level2"
+        maxlength="100"
+        required
+    >
+</label>
+
+<label>
+    Venue (optional)
+    <input
+        type="text"
+        name="venue"
+        placeholder="Can be discussed later"
+        maxlength="250"
+    >
+</label>
+
+      <label>
+        Performance length
+        <input
+          type="text"
+          name="performance_length"
+          placeholder="For example: 2 hours"
+          maxlength="100"
+        >
+      </label>
+
+      <label>
+        Additional details
+        <textarea
+          name="message"
+          rows="4"
+          maxlength="2000"
+          placeholder="Requests, timings or questions"
+        ></textarea>
+      </label>
+
+      <p class="form-note">
+    This form sends a booking request only. Missing details,
+    including the date, time, venue, music, pricing and final
+    arrangements, can be discussed directly by phone.
+</p>
+
+      <button class="button" type="submit">
+        Send booking request
+      </button>
+    </form>
+  </details>
+</article> 
 
         <article id="booking-equipment" class="card">
           <span class="card-number">02</span>
@@ -176,21 +365,27 @@
     </section>
 
     <section id="contact" class="section">
-      <p class="eyebrow">Get in touch</p>
-      <h2>Start a conversation</h2>
-      <p>Based in Calgary, Alberta.</p>
+  <p class="eyebrow">Get in touch</p>
 
-      <a
-        class="button"
-        href="https://www.facebook.com/p/Jay-Chowdhury-JC-61555985463207/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Visit Jay's Facebook page ↗
-      </a>
+  <h2>Let’s plan your event.</h2>
 
-      <!-- Add the public business email and phone number here. -->
-    </section>
+  <p>
+    Contact Parampara Entertainment to discuss live band
+    performances, DJ services, sound systems, lighting,
+    stages and LED screens.
+  </p>
+
+  <p>Based in Calgary, Alberta.</p>
+
+  <a
+    class="button"
+    href="https://www.facebook.com/profile.php?id=61586558795149"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Contact Parampara on Facebook ↗
+  </a>
+</section>
   </main>
 
   <footer class="site-footer">
